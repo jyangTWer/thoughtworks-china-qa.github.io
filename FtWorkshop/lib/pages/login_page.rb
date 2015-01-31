@@ -11,4 +11,8 @@ class LoginPage < SitePrism::Page
 		password_input.set password
 		login_button.click
 	end
+
+	def failed_message
+		login_failed_error.text
+	end
 end

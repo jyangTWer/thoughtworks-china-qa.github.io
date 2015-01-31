@@ -9,5 +9,5 @@ Then(/^I should see "(.*?)"$/) do |username|
 end
 
 Then(/^I should see "(.*?)" on login page$/) do |error_message|
-	expect(@login_page.login_failed_error.text).to eq error_message
+	expect(@login_page.failed_message).to eq error_message
 end
